@@ -1,0 +1,35 @@
+.weare{
+    background: #E9E9E9;
+    padding-top: 20px;
+    // padding-bottom: 80px;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content{
+        padding-top: 60px;
+        max-width: 525px;
+        p{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    &__title{
+        margin-bottom: 40px;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+        position: relative;
+        color: #052941;
+        &::after{
+            content: "";
+            width: 50px;
+            height: 1px;
+            background: #DD4A2D;
+            position: absolute;
+            bottom: -20px;
+            left: 0px;
+        }
+    }
+}

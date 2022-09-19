@@ -1,0 +1,73 @@
+.services{
+    padding-top: 115px;
+    &__top{
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 5px;
+        &-item{
+            height: 125px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            span{
+                background: #fff;
+                border-radius: 100%;
+                width: 12px;
+                height: 12px;
+                margin-right: 10px;
+            }
+            &.light{
+                background: rgba(221, 74, 45, 0.8);
+            }
+            &.dark{
+                background: rgba(5, 41, 65, 0.8);
+            }
+        }
+    }
+    &__bottom{
+        margin-top: 5px;
+        background: url('../img/services/services-bg.png') 50% center / cover no-repeat;
+        padding-top: 55px;
+        padding-bottom: 45px;
+        text-align: center;
+        color: #fff;
+        &-title{
+            display: flex;
+            flex-direction: column;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 80px;
+        }
+        p{
+            max-width: 763px;
+            margin: 0 auto;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 40px;
+        }
+    }
+}
+.star-title{
+    h2{
+        text-align: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 42px;
+        color: #052941;
+        position: relative;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

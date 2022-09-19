@@ -1,0 +1,19 @@
+.benifits{
+    padding: 52px 0px;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item{
+        img{
+            margin-right: 10px;
+        }
+        span{
+            color: #DAD7D7;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 38px;
+        }
+    }
+}

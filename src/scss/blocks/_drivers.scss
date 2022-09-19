@@ -1,0 +1,39 @@
+.drivers{
+    padding-top: 100px;
+    padding-bottom: 75px;
+    background: url('../img/drivers/drivers-bg.png') 50% center / cover no-repeat;
+    text-align: center;
+    color: #fff;
+    &__title{
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 42px;
+        color: #FFFFFF;
+        position: relative;
+        margin-bottom: 55px;
+        &::after{
+            content: "";
+            width: 50px;
+            height: 1px;
+            background: #DD4A2D;
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    p{
+        max-width: 710px;
+        margin: 0 auto;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        margin-bottom: 25px;
+        color: #FFFFFF;
+        &:last-child{
+            margin-bottom: 80px;
+        }
+    }
+    
+}
