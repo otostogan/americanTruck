@@ -20,6 +20,18 @@ ul{
     list-style-type: none;
 }
 
+.questions{
+    margin-bottom: 30px;
+    .container{
+        background: url('../img/questions.png') 50% center / cover no-repeat;
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+    .drivers__title{
+        text-align: center;
+    }
+}
+
 @import './blocks/header';
 @import './blocks/banner';
 @import './blocks/benifits';
@@ -27,4 +39,6 @@ ul{
 @import './blocks/trust';
 @import './blocks/drivers';
 @import './blocks/services';
+@import './blocks/clients';
+@import './blocks/footer';
 @import './blocks/btn';

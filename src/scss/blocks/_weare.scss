@@ -33,3 +33,29 @@
         }
     }
 }
+
+@media(max-width: 992px){
+    .weare{
+        img{
+            width: 300px;
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .weare{
+        img{
+            width: 155px;
+        }
+    }
+}
+@media(max-width: 576px){
+    .weare{
+        &__wrapper{
+            flex-direction: column;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
