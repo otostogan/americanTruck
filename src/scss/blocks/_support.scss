@@ -1,0 +1,99 @@
+.support{
+    padding-top: 30px;
+    border-top: 2px solid #E9E9E9;
+    border-bottom: 2px solid #E9E9E9;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__form{
+        margin-top: 30px;
+        max-height: 420px;
+        input{
+            height: 45px;
+            padding-top: 5px;
+            padding-left: 20px;
+            outline: none;
+            border: none;
+            width: 100%;
+            margin-bottom: 25px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            background: #FFFFFF;
+            border-radius: 5px;
+            color: #BABABA;
+            &:last-child{
+                margin-bottom: 0px
+            }
+        }
+        .btn{
+            outline: none;
+            border: none;
+            margin: 10px auto 0px
+        }
+        max-width: 360px;
+        background: #052941;
+        border-radius: 15px;
+        padding: 20px 40px;
+        &-title{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        &-subtitle{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            color: #FFFFFF;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #BABABA;
+  }
+
+@media(max-width: 1200px){
+    .support{
+        &__wrapper{
+            align-items: center;
+        }
+        &__img{
+            img{
+                width: 500px;
+            }
+        }
+        &__form{
+            margin-top: 0px;
+        }
+    }
+}
+@media(max-width: 992px){
+    .support{
+        &__img{
+            img{
+                width: 300px;
+            }
+        }
+        &__form{
+            max-width: 300px;
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .support{
+        &__wrapper{
+            flex-direction: column-reverse;
+        }
+        &__form{ 
+            margin-bottom: 30px;
+        }
+    }
+}
