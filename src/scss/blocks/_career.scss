@@ -1,0 +1,39 @@
+.career{
+    padding-top: 105px;
+    padding-bottom: 125px;
+    background: url('../img/career.png') 50% center/cover no-repeat;
+    h1{
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 75px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
+
+@media(max-width: 1200px){
+    .career{
+        h1{
+            font-size: 45px;
+            line-height: 50px;
+        }
+    }
+}
+@media(max-width: 768px){
+    .career{
+        h1{
+            font-size: 35px;
+            line-height: 40px;
+        }
+    }
+}
+@media(max-width: 576px){
+    .career{
+        padding-top: 70px;
+        padding-bottom: 70px;
+        h1{
+            font-size: 22px;
+            line-height: 25px;
+        }
+    }
+}

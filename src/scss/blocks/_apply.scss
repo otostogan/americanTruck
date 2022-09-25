@@ -1,0 +1,138 @@
+.apply{
+    padding-top: 40px;
+    border-top: 2px solid #E9E9E9;
+    &__title{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        color: #052941;
+    }
+    &__descr{
+        margin-top: 30px;
+        margin-bottom: 50px;
+        p{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #000000;
+        }
+    }
+    &__form{
+        margin-bottom: 50px;
+        &.orange{
+            padding-top: 45px;
+            border-top: 2px solid #E9E9E9;
+        }
+        &-wrapper{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 40px;
+        }
+        &-inputs{
+            display: flex;
+            flex-direction: column;
+            select{
+                appearance: none;
+                background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E")!important;
+                background-repeat: no-repeat!important;
+                background-position: right 0.7rem top 50%!important;
+                background-size: 0.65rem auto!important;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    right: 15px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    border-left: 25px solid transparent;
+                    border-right: 25px solid transparent;
+                    border-top: 50px solid #555;
+                }
+            }
+            input, select{
+                margin-bottom: 35px;
+                padding-right: 15px;
+                background: #E2E2E2;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                height: 45px;
+                border: none;
+                outline: none;
+                padding-left: 20px;
+                color: #303030;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    &__submit{
+        &.orange{
+            background: rgba(221, 74, 45, 0.92);
+        }
+        padding-top: 60px;
+        padding-right: 45px;
+        padding-bottom: 55px;
+        padding-left: 70px;
+        background: rgba(5, 41, 65, 0.92);
+        &-title{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 42px;
+            color: #FFFFFF;
+        }
+        &-list{
+            margin-top: 50px;
+            li{
+                margin-bottom: 30px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+                color: #FFFFFF;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1200px){
+    .apply__submit{
+        padding-top: 30px;
+        .btn.apply-btn{
+            width: 200px;
+        }
+    }
+}
+@media(max-width: 992px){
+    .apply__form-wrapper{
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+}
+@media(max-width: 576px){
+    .apply__title{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .apply__form-inputs input, .apply__form-inputs select{
+        width: 100%;
+    }
+    .apply__submit{
+        padding-right: 20px;
+        padding-bottom: 50px;
+        padding-left: 30px;
+    }
+    .apply__submit-title{
+        font-size: 30px;
+    }
+    .apply__submit-list{
+        margin-top: 25px;
+    }
+    .apply__submit .btn.apply-btn{
+        margin: 20px auto;
+    }
+}

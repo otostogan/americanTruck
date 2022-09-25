@@ -1,0 +1,36 @@
+.requirements{
+    padding-top: 40px;
+    padding-bottom: 90px;
+    &__title{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        color: #052941;
+    }
+    ul{
+        margin-top: 40px;
+        li{
+            div{
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                margin-right: 5px;
+                border-radius: 100%;
+                background: #DD4A2D;
+            }
+            text-align: center;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media(max-width: 576px){
+    .requirements{
+        &__title{
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+}
